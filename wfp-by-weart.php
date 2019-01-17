@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Weart Category Posts Widget
-Plugin URI: http://weartstudio.eu
+Plugin URI: https://github.com/weartstudio/weart-category-posts-widget
 Description: Display the latest posts with the most beautiful way from the picked category.
 Author: weartstudio
 Author URI: http://weartstudio.eu
