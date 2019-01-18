@@ -36,6 +36,8 @@ class weart_featured_widget extends WP_Widget {
         $position = $instance['position'];
         // excerpt
         $excerpt = $instance['excerpt'];
+        // featured
+        $featured = $instance['featured'];
       // end
 
       // widget header
@@ -54,7 +56,7 @@ class weart_featured_widget extends WP_Widget {
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
               <div class="wfpw-row">
                 <?php if ( has_post_thumbnail() ) { ?>
-                  <div class="wfpw-img">
+                  <div class="wfpw-img <?php echo esc_attr($featured); ?>">
                     <?php if($position): ?><span class="wfpw-num"><?php echo esc_attr($wfpw_num) ?></span><?php endif; ?>
                     <div class="wfpw-img-file" style="background-image: url( <?php the_post_thumbnail_url(); ?> );"></div>
                   </div>
@@ -88,6 +90,7 @@ class weart_featured_widget extends WP_Widget {
           'position' => true,
           'date' => true,
           'excerpt' => false,
+          'featured' => 'small',
           'popular_days' => 30
         );
         $instance = wp_parse_args( (array) $instance, $defaults );
@@ -124,7 +127,7 @@ class weart_featured_widget extends WP_Widget {
           </p>
         <!-- end -->
 
-        <!-- category num -->
+        <!-- category -->
           <p>
             <label for="<?php echo esc_attr( $this->get_field_id( 'category' ) ); ?>">
               <?php esc_html_e('Category of posts','weart-category-posts-widget'); ?>
@@ -144,6 +147,30 @@ class weart_featured_widget extends WP_Widget {
                 </option>
               <?php endforeach; ?>
 
+            </select>
+          </p>
+        <!-- end -->
+
+        <!-- featured-img -->
+          <p>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'featured' ) ); ?>">
+              <?php esc_html_e('Featured image options','weart-category-posts-widget'); ?>
+            </label>
+            <select
+              id="<?php echo esc_attr( $this->get_field_id( 'featured' ) ); ?>"
+              name="<?php echo esc_attr( $this->get_field_name( 'featured' ) ); ?>"
+              class="widefat">
+              <?php $fI = $instance['featured'];
+              $s = 'selected'; ?>
+              <option value="small" <?php if($fI == "small"){ echo $s; } ?>>
+                <?php esc_html_e('Thumbnail size', 'weart-category-posts-widget') ?>
+              </option>
+              <option value="full" <?php if($fI == "full"){ echo $s; } ?>>
+                <?php esc_html_e('Full-width', 'weart-category-posts-widget') ?>
+              </option>
+              <option value="no" <?php if($fI == "no"){ echo $s; } ?>>
+                <?php esc_html_e('No image', 'weart-category-posts-widget') ?>
+              </option>
             </select>
           </p>
         <!-- end -->
@@ -213,6 +240,8 @@ class weart_featured_widget extends WP_Widget {
       $instance['date'] = ( ! empty( $new_instance['date'] ) ) ? strip_tags( $new_instance['date'] ) : '';
       // Excerpt
       $instance['excerpt'] = ( ! empty( $new_instance['excerpt'] ) ) ? strip_tags( $new_instance['excerpt'] ) : '';
+      // featured
+      $instance['featured'] = ( ! empty( $new_instance['featured'] ) ) ? strip_tags( $new_instance['featured'] ) : '';
 
       return $instance;
     }

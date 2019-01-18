@@ -27,6 +27,18 @@
           overflow: hidden;
         // end
 
+        // sizes
+          &.full{
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-right: 0rem;
+            margin-bottom: 1rem;
+            .wfpw-img-file{ padding-top: 56.5% !important }
+          }
+          &.no{ display: none }
+        // end
+
         // file
           .wfpw-img-file{
             padding-top: 100%;
