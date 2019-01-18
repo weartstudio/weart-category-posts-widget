@@ -5,7 +5,7 @@ class weart_featured_widget extends WP_Widget {
     function __construct() {
       parent::__construct(
         /* Base   ID   */ 'weart_featured_widget',
-        /* Widget name */ esc_html__('Weart Featured Posts', 'weart-category-posts-widget')
+        /* Widget name */ esc_html__('Weart Category Posts', 'weart-category-posts-widget')
       );
 		  add_action( 'wp_enqueue_scripts', array($this,'enqueue_scripts'));
     }

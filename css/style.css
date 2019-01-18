@@ -48,6 +48,8 @@
       display: block;
       font-size: 75%;
       margin-top: .25rem; }
+    .wfpw .wfpw-row .wfpw-text .wfpw-title {
+      font-size: 1rem; }
   .wfpw .wfpw-row::after {
     content: "";
     clear: both;
