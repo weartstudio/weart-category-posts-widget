@@ -34,6 +34,8 @@ class weart_featured_widget extends WP_Widget {
         $date = $instance['date'];
         // position
         $position = $instance['position'];
+        // excerpt
+        $excerpt = $instance['excerpt'];
       // end
 
       // widget header
@@ -59,6 +61,7 @@ class weart_featured_widget extends WP_Widget {
                 <?php } ?>
                 <div class="wfpw-text">
                   <h3 class="wfpw-title"><?php the_title(); ?></h3>
+                  <?php if($excerpt): the_excerpt(); endif; ?>
                   <?php if($date): ?>
                     <time class="wfpw-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time(get_option('date_format')); ?></time>
                   <?php endif; ?>
@@ -84,6 +87,7 @@ class weart_featured_widget extends WP_Widget {
           'category' => '',
           'position' => true,
           'date' => true,
+          'excerpt' => false,
           'popular_days' => 30
         );
         $instance = wp_parse_args( (array) $instance, $defaults );
@@ -174,6 +178,21 @@ class weart_featured_widget extends WP_Widget {
           </p>
         <!-- end -->
 
+        <!-- excerpt -->
+          <p>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'excerpt' ) ); ?>">
+              <input
+                id="<?php echo esc_attr( $this->get_field_id( 'excerpt' ) ); ?>"
+                name="<?php echo esc_attr( $this->get_field_name( 'excerpt' ) ); ?>"
+                value="1" <?php checked( $instance['excerpt'], 1 ); ?>
+                type="checkbox"
+                class="checkbox"
+              />
+              <?php esc_html_e('Display the excerpts?','weart-category-posts-widget'); ?>
+            </label>
+          </p>
+        <!-- end -->
+
       <?php
     }
   // end
@@ -192,6 +211,8 @@ class weart_featured_widget extends WP_Widget {
       $instance['position'] = ( ! empty( $new_instance['position'] ) ) ? strip_tags( $new_instance['position'] ) : '';
       // Date
       $instance['date'] = ( ! empty( $new_instance['date'] ) ) ? strip_tags( $new_instance['date'] ) : '';
+      // Excerpt
+      $instance['excerpt'] = ( ! empty( $new_instance['excerpt'] ) ) ? strip_tags( $new_instance['excerpt'] ) : '';
 
       return $instance;
     }
