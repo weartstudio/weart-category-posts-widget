@@ -18,16 +18,15 @@ Weart Category Posts Widget is a small simple, rock solid widget with one only o
 **Display the latest posts** with the most beautiful way **from the picked category in the sidebar**.
 
 = Features =
-* Pick a category to display posts.
-* Set the number of displaying posts.
-* Featured Images if it is avalible for the post.
-* Turn ON / OFF the Date displaying.
-* Fully Translateable
-* Minimal CSS, no JS to not causes any conflict with the theme.
+* **Pick a category** to display posts.
+* Set the **number of displaying posts**.
+* **Featured Images** if it is avalible for the post.
+* Turn **ON / OFF the Date display**ing.
+* Fully **Translateable**
+* Minimal CSS, no JS to **not causes any conflict** with the theme.
 
 = More about me =
-I am a WordPress developer, check my website for more information about my works.
-[ WeartStudio ]( http://weartstudio.eu )
+[ I am ]( http://weartstudio.eu ) a WordPress developer, check my website for more information about my works.
 
 == Installation ==
 = Install from WordPress Admin =
