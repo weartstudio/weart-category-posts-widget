@@ -31,14 +31,14 @@ Weart Category Posts Widget is a small simple, rock solid widget with one only o
 == Installation ==
 = Install from WordPress Admin =
 1.  Navigate into the WordPress Admin Plugins menu, than click the Add New button.
-2.  Search \"Weart Category Posts Widget\".
+2.  Search "Weart Category Posts Widget".
 3.  Click Install, than activate.
-4.  Navigate to \"Appearance / Widgets\" and add/setup the \"Weart Category Posts\" widget.
+4.  Navigate to "Appearance / Widgets" and add/setup the "Weart Category Posts" widget.
 
 = Install with the Manual way =
 1.  Upload the plugin into the the WordPress Plugins.
 2.  Activate the plugin.
-3.  Navigate to \"Appearance / Widgets\" and add/setup the \"Weart Category Posts\" widget.
+3.  Navigate to "Appearance / Widgets" and add/setup the "Weart Category Posts" widget.
 
 == Frequently Asked Questions ==
 = Does this plugin work with newest WP version and also older versions? =
@@ -62,5 +62,6 @@ The plugin is just released into the WordPress Plugin Directory.
 == Translations ==
 
 * English - default, always included
+* Hungarian - a Magyar fordítást a bővítmény tartalmazza
 
 *Note:* This plugin is localized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating I recommend the awesome ["Codestyling Localization" plugin](http://wordpress.org/extend/plugins/codestyling-localization/) and for validating the ["Poedit Editor"](http://www.poedit.net/).
