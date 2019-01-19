@@ -2,65 +2,67 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2019-01-18 16:41+0100\n"
-"PO-Revision-Date: 2019-01-18 16:41+0100\n"
-"Last-Translator: weartstudio <support@weartstudio.eu>\n"
+"PO-Revision-Date: 2019-01-19 09:27+0100\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: hu_HU\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../inc/widget.php:8
 msgid "Weart Category Posts"
-msgstr ""
+msgstr "Weart Kategória Cikkek"
 
 #: ../inc/widget.php:87
 msgid "Featured Posts"
-msgstr ""
+msgstr "Ajánlott cikkek"
 
 #: ../inc/widget.php:103
 msgid "Title:"
-msgstr ""
+msgstr "Widget cím"
 
 #: ../inc/widget.php:118
 msgid "Number of posts to display:"
-msgstr ""
+msgstr "Megjelenítendő cikkek száma"
 
 #: ../inc/widget.php:133
 msgid "Category of posts"
-msgstr ""
+msgstr "Cikkek kategóriája"
 
 #: ../inc/widget.php:140
 msgid "No Category / Fresh posts"
-msgstr ""
+msgstr "Nincs kategória / Friss cikkek"
 
 #: ../inc/widget.php:157
 msgid "Featured image options"
-msgstr ""
+msgstr "Kiemelt kép beállítás"
 
 #: ../inc/widget.php:166
 msgid "Thumbnail size"
-msgstr ""
+msgstr "Bélyegkép méret"
 
 #: ../inc/widget.php:169
 msgid "Full-width"
-msgstr ""
+msgstr "Teljes szélesség"
 
 #: ../inc/widget.php:172
 msgid "No image"
-msgstr ""
+msgstr "Nincs kép"
 
 #: ../inc/widget.php:188
 msgid "Display the position of the post?"
-msgstr ""
+msgstr "Jelenjen meg a cikk pozíciója is?"
 
 #: ../inc/widget.php:203
 msgid "Display the date above the title?"
-msgstr ""
+msgstr "Jelenjen meg a cikk dátuma is?"
 
 #: ../inc/widget.php:218
 msgid "Display the excerpts?"
-msgstr ""
+msgstr "Kivonat megjelenítése?"
