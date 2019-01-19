@@ -5,7 +5,7 @@ Plugin URI: https://github.com/weartstudio/weart-category-posts-widget
 Description: Display the latest posts with the most beautiful way from the picked category.
 Author: weartstudio
 Author URI: http://weartstudio.eu
-Version: 1.0.0
+Version: 1.0.1
 Text Domain: weart-category-posts-widget
 Domain Path: /languages
 License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -17,7 +17,7 @@ defined('ABSPATH') or die('Hey what are you doing here? You silly human!');
 /* define the plugin's folder as default filefolder */
 define ('WEART_WIDGET_URL', trailingslashit(plugin_dir_url(__FILE__)));
 define ('WEART_WIDGET_DIR', trailingslashit(plugin_dir_path(__FILE__)));
-define ('WEART_WIDGET_VER', '1.0.0');
+define ('WEART_WIDGET_VER', '1.0.1');
 
 /* Initialize Widget */
 if(!function_exists('weart_social_widget_init')):

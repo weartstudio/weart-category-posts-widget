@@ -20,7 +20,8 @@ Weart Category Posts Widget is a small simple, rock solid widget with one only o
 = Features =
 * **Pick a category** to display posts.
 * Set the **number of displaying posts**.
-* **Featured Images** if it is avalible for the post.
+* **Featured Images** if it is avalible for the post with two sizes (full, thumbnail)
+* Enable **excerpts** to display.
 * Turn **ON / OFF the Date display**ing.
 * Fully **Translateable**
 * Minimal CSS, no JS to **not causes any conflict** with the theme.
@@ -52,10 +53,16 @@ Yes, it is, and it will be. I am a premium theme developer and I need this plugi
 2.  During operation.
 
 == Changelog ==
+= 1.0.1 =
+Featured images options, and excerpt settings.
+
 = 1.0 =
 Initial Release
 
 == Upgrade Notice ==
+= 1.0.1 =
+We added a featured image and a excerpt setting options.
+
 = 1.0 =
 The plugin is just released into the WordPress Plugin Directory.
 
