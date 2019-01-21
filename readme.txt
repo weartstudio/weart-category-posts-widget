@@ -2,6 +2,8 @@
 Contributors: weartstudio
 Tags: categories,category,posts,widget
 Donate link: http://weartstudio.eu
+Text Domain: weart-category-posts-widget
+Domain Path: /languages/
 Requires at least: 4.9
 Tested up to: 5.0.3
 Requires PHP: 5.6
